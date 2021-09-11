@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask course</title>
+</head>
+<body>
+    <h1>hello i am {{ name }}</h1>
+
+    <p>some text from paragraph</p>
+
+    {% if today %}
+    <p>{{ today }}</p>
+    {% else %}
+    <p>No today parameter</p>
+    {% endif %}
+
+    <ul>
+        {% for item in list_items %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ol>
+
+    <div>
+        <a href="http://yandex.ru" target="_blank">go to yandex</a>
+    </div>
+
+    <div>
+        <img src="https://s8.travelask.ru/system/images/files/000/042/524/wysiwyg_jpg/frog-photography-27__880.jpg?1486386835"
+             width="250px" height="200px">
+    </div>
+
+    <form action="">
+        <input type="text" name="text-input" placeholder="input some text">
+        <input type="password" name="text-password" placeholder="input password">
+        <input type="submit" value="send">
+    </form>
+
+</body>
+</html>
